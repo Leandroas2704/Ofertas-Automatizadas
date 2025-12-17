@@ -25,7 +25,7 @@ entrar.click()
 time.sleep(2)
 
 base_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-caminho_arquivo = os.path.join(base_dir, "Planilha de Fretes - Pessoal.xlsx")
+caminho_arquivo = os.path.join(base_dir, "Planilha de Fretes - Venda.xlsx")
 
 if not os.path.exists(caminho_arquivo):
     raise FileNotFoundError(f"Arquivo não encontrado: {caminho_arquivo}")
@@ -195,4 +195,5 @@ for index, row in df.iterrows():
 
 print("Todas as ofertas foram criadas com sucesso!")
 navegador.quit()
+
 time.sleep(10)
